@@ -15,8 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls import url, include
+from django.contrib import admin
+
+from graphene_django.views import GraphQLView
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('musicLib.urls'))
+    path('graphql/', GraphQLView.as_view(graphiql=True)),
+    # path('', include('musicLib.urls'))
 ]

@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
+    'graphene_django',
     'musicLib',
 ]
 
@@ -71,7 +71,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'TheaterL.wsgi.application'
 
-
+GRAPHENE = {
+    'SCHEMA': 'TheaterL.schema.schema',
+}
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
