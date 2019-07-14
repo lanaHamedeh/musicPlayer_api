@@ -25,7 +25,19 @@ SECRET_KEY = '=6de)7f7y(u%3sq212hx4g5k_50omybctq)k+7-1l7_uj6rh)='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+
+ALLOWED_HOSTS = ['localhost','127.0.0.1']
+
+CORS_ORIGIN_WHITELIST=[
+    'http://localhost:3000',
+                       ]
+
+CORS_ALLOW_CREDENTIALS = True
+
+GRAPHENE = {
+    'SCHEMA': 'TheaterL.schema.schema',
+}
+
 
 
 # Application definition
@@ -37,19 +49,24 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'graphene_django',
+    'corsheaders',
     'musicLib',
+    'graphene_django',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
+
+
 
 ROOT_URLCONF = 'TheaterL.urls'
 
@@ -71,9 +88,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'TheaterL.wsgi.application'
 
-GRAPHENE = {
-    'SCHEMA': 'TheaterL.schema.schema',
-}
+
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 

@@ -17,13 +17,13 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url, include
 from django.contrib import admin
+from .schema import schema
+from django.views.decorators.csrf import csrf_exempt
 
 from graphene_django.views import GraphQLView
 
-
-
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('graphql/', GraphQLView.as_view(graphiql=True)),
-    # path('', include('musicLib.urls'))
+
+    path('graphql/', csrf_exempt(GraphQLView.as_view(graphiql=True))),
+    path('admin/', admin.site.urls)
 ]
