@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8796230e-3517-4ab4-80f1-e085332b6d70" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheaterL/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/TheaterL/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheaterL/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/TheaterL/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/musicLib/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/musicLib/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-    </list>
+    <list default="true" id="8796230e-3517-4ab4-80f1-e085332b6d70" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,15 +250,15 @@
       <workItem from="1562841562406" duration="2548000" />
       <workItem from="1562852939084" duration="4602000" />
       <workItem from="1563036076637" duration="2739000" />
-      <workItem from="1563088369472" duration="6301000" />
+      <workItem from="1563088369472" duration="6835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44682000" />
+    <option name="totallyTimeSpent" value="45216000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20196672" />
